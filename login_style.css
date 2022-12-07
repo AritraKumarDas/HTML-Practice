@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url('https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283__340.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    font-family: sans-serif;
+
+}
+
+.card {
+    width: 32%;
+    min-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    /* height: 70vh; */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    padding: 5rem 8rem;
+}
+
+.header,
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header img {
+    width: 25%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.header h1 {
+    font-size: 3.1rem;
+}
+
+.header p {
+    padding-top: 1rem;
+    font-size: 1.15rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.social {
+    margin-top: 2rem;
+}
+
+.social a {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0.8rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+.divider {
+    text-align: center;
+    /* background-color: lightgrey; */
+    padding-block: 1rem;
+    position: relative;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.login-form>input:first-child {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    border-radius: 3px;
+    padding: 0.8rem;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.85);
+    color: white;
+    font-size: 1.3rem;
+    padding-block: .8rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-block: 1rem;
+    font-weight: 700;
+}
+
+.login-form button:hover {
+    background-color: rgba(0, 128, 0, 1);
+
+}
+
+.login-form .check-control {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.12rem;
+    font-weight: 700;
+}
+
+.footer {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer a {
+    color: green;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1050px) {
+    .card {
+        padding: 3rem 4rem;
+    }
+}
